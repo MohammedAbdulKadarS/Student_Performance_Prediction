@@ -5,7 +5,7 @@ import random
 
 # ====== CONFIG ==========
 st.set_page_config(page_title="Abdul's Student Success Studio", page_icon="🎓", layout="wide")
-st.sidebar.image(r"C:\Users\abdula\OneDrive\Desktop\StudentPerformancePredictionModel\generated-image.png", width=120)
+st.sidebar.image("generated-image.jpg", width=120)
 st.sidebar.title("Navigation 🚀")
 tabs = ["Live Predictor", "Explore Data", "Champions Board", "Feedback"]
 section = st.sidebar.radio("", tabs)
