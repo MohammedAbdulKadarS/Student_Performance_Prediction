@@ -22,9 +22,9 @@ st.sidebar.markdown(f"##### 💬 Tip: {random.choice(quotes)}")
 # ====== MODEL LOADING (update path if different) ==========
 @st.cache_resource
 def load_model():
-    model = joblib.load(r"C:\Users\abdula\OneDrive\Desktop\StudentPerformancePredictionModel\Student_Performance_Data_Analysis_model.pkl")
-    scaler = joblib.load(r"C:\Users\abdula\OneDrive\Desktop\StudentPerformancePredictionModel\Student_Performance_Data_Analysis_scaler.pkl")
-    selector = joblib.load(r"C:\Users\abdula\OneDrive\Desktop\StudentPerformancePredictionModel\Student_Performance_Data_Analysis_selector.pkl")
+    model = joblib.load("Student_Performance_Data_Analysis_model.pkl")
+    scaler = joblib.load("Student_Performance_Data_Analysis_scaler.pkl")
+    selector = joblib.load("Student_Performance_Data_Analysis_selector.pkl")
     return model, scaler, selector
 
 model, scaler, selector = load_model()
