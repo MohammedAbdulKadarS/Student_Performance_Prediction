@@ -1,78 +1,174 @@
-# Student_Performance_Prediction
-Predicts student academic performance using machine learning models. Includes data analysis in Jupyter Notebook and an interactive Streamlit web app for quick predictions and visualizations.
-# Features
-Predicts student scores/grades using ML model
+# Student Performance Prediction
 
-Easy-to-use Streamlit web interface
+Predicts student academic performance using **machine learning** models! 🚀  
+Includes Python data analysis in Jupyter Notebook and an interactive Streamlit web app for quick predictions and visualizations.  
+This all-in-one project gives students, teachers, and parents quick insights into final scores using easy-to-use forms and sleek dashboards.
 
-Shows data analysis (EDA) and prediction output
+---
 
-Clean and shareable project structure
-# Project Files
-<img width="984" height="403" alt="image" src="https://github.com/user-attachments/assets/54fe9569-e5eb-4ef8-beca-75ae88659433" />
+## Features
 
-# Installation & Setup
-Clone this repo or download as zip
+- Predicts a student's final score from academic and demographic inputs
+- Simple, interactive Streamlit web app for live predictions  
+- Data analysis and model training in Jupyter Notebook  
+- Trained machine learning model for instant feedback  
+- Visual leaderboard showcasing top scorers!  
+- User feedback and app rating system built-in
 
-Install dependencies:
+---
 
-<img width="682" height="82" alt="image" src="https://github.com/user-attachments/assets/33d6d835-58b7-4819-84ab-f5e083e25ccf" />
+## Prerequisites
 
-To run Streamlit app:
+Make sure you have:
 
-<img width="614" height="79" alt="image" src="https://github.com/user-attachments/assets/cdbc73ba-f8cb-43e9-bbfe-0ff4f5c8d75e" />
+- Python 3.8 or higher
+- `pip` Python package manager
 
-Or, open Student_Performance_Data_Analysis.ipynb in Jupyter Notebook to view model code
+---
 
-# How It Works
+## Installation
 
-  # Data Analysis: 
+### 1. Clone the Repository
 
-  The Notebook explores the data and trains a prediction model
-
-  # Prediction: 
-
-  The Streamlit app lets you input student data and see the prediction
-
-# Screenshots
-
-<img width="1889" height="901" alt="Screenshot 2025-11-12 235945" src="https://github.com/user-attachments/assets/4e9e8634-79f7-48db-9068-a4b57a25ff5f" />
-
-Enter student information in the input fields. Adjust sliders and dropdowns as needed, then click Predict Now to get the final score prediction.
-
-<img width="1907" height="898" alt="Screenshot 2025-11-13 000008" src="https://github.com/user-attachments/assets/039b7515-33ea-4cce-b03b-4a8c9c1ff705" />
-
-After entering all required details, the app instantly shows the "Predicted Final Score" in a highlighted box.
-
-<img width="1887" height="894" alt="Screenshot 2025-11-13 000035" src="https://github.com/user-attachments/assets/f19414bf-a6b7-4fbd-a75a-b87999ef3ec8" />
-
-Use the Explore Data section to view feature relationships. Select "Correlation Heatmap" to understand which factors influence scores the most.
-
-<img width="1906" height="914" alt="Screenshot 2025-11-13 000058" src="https://github.com/user-attachments/assets/e4ba70b4-0025-43ea-8505-839c7cb269e7" />
-
-In Explore Data, select "Feature Distribution" and choose any variable (e.g., Study Hours). Analyze data spread and insights visually.
-
-<img width="1907" height="902" alt="Screenshot 2025-11-13 000124" src="https://github.com/user-attachments/assets/25c03cb7-e5ac-40dc-b251-3d8f8463203e" />
-
-View the Champions section to see top scorers and their final scores. This motivates users and helps track performance among peers
-
-<img width="1907" height="891" alt="Screenshot 2025-11-13 000145" src="https://github.com/user-attachments/assets/df0a53ab-0df6-484c-b061-f51373065adf" />
-
-Use the Feedback section to submit your name, feedback for Abdul, and rate the app. Click Send to submit your input for future improvements.
-
-<img width="1905" height="910" alt="Screenshot 2025-11-13 000206" src="https://github.com/user-attachments/assets/cb90b26c-e5f8-427e-9518-aa3bedc24102" />
-
-# Future Improvements
-
-Improve accuracy with better models and EDA
-
-Add more input features
-
-Enhance the UI
-
-# Credits
-
-Built by MOHAMMED ABDUL KADAR S, CSE Student
+```bash
+git clone https://github.com/MohammedAbdulKadarS/Student_Performance_Prediction.git
+cd Student_Performance_Prediction
+```
 
 
+### 2. Install Dependencies
 
+```python
+pip install -r requirements.txt
+```
+
+
+### 3. (Optional) Retrain the Model
+
+The model files (`*_model.pkl`, `*_scaler.pkl`, `*_selector.pkl`) are already included. To retrain the model, edit and run:
+
+```text
+Open and modify Student_Performance_Data_Analysis.ipynb as needed
+Save/export your own model if you wish
+```
+
+
+---
+
+## Running the Application
+
+### Streamlit Web App
+
+```python
+streamlit run student_performance_streamlit.py
+```
+
+
+Now open your browser and go to:
+
+```text
+http://localhost:8501
+```
+
+
+### Jupyter Notebook
+
+Open and explore:
+
+```text
+Student_Performance_Data_Analysis.ipynb
+```
+
+
+---
+
+## How It Works
+
+- The app uses a machine learning model trained on historical student performance data (`Task___students_performance_dataset.xlsx`).
+- Input details like previous semester scores, attendance, study hours, extracurriculars, etc.
+- The model predicts the **final score**, displayed instantly on the app.
+- Top scorers are shown on a leaderboard.
+- You can submit feedback and rate the app directly.
+
+---
+
+## File Structure
+
+```bash
+Student_Performance_Prediction/
+├── Student_Performance_Data_Analysis.ipynb           # Data analysis notebook
+├── Student_Performance_Data_Analysis_model.pkl       # Trained ML model
+├── Student_Performance_Data_Analysis_scaler.pkl      # Model scaler
+├── Student_Performance_Data_Analysis_selector.pkl    # Feature selector
+├── Task___students_performance_dataset.xlsx          # Sample training data
+├── student_performance_streamlit.py                  # Streamlit web application
+├── requirements.txt                                  # Python dependencies
+├── generated-image.png                               # Project/app logo
+├── README.md                                         # Project documentation
+```
+
+
+---
+
+## Screenshots
+
+### 1. Predictor Web App
+
+<img width="1889" height="901" alt="Screenshot 2025-11-12 235945" src="https://github.com/user-attachments/assets/ce32b035-4b94-46aa-ac73-5cd922dac732" />
+
+
+### 2. Prediction Output
+
+<img width="1887" height="894" alt="Screenshot 2025-11-13 000035" src="https://github.com/user-attachments/assets/9c2d1813-3950-4b04-845f-9a6ae2535e97" />
+
+
+### 3. Champions Leaderboard
+
+<img width="1907" height="891" alt="Screenshot 2025-11-13 000145" src="https://github.com/user-attachments/assets/f2f705d6-b3b6-4ebf-8500-bb380e37272e" />
+
+
+### 4. Feedback Section
+
+<img width="1905" height="910" alt="Screenshot 2025-11-13 000206" src="https://github.com/user-attachments/assets/8b9db072-c886-4310-ba83-a9e986174e32" />
+
+
+---
+
+## Future Improvements
+
+- Add separate login for students/teachers/parents  
+- More detailed analytics and visualization features  
+- Translation/localization for wider reach  
+- Export reports and leaderboard to PDF/CSV  
+- Enhanced model performance with extra features
+
+---
+
+## Step-by-Step Guide: How to Use the Student Performance Predictor
+
+**Step 1:** Go to the "Live Predictor" tab.  
+**Step 2:** Enter student details and click "Predict Now."  
+**Step 3:** View the **Predicted Final Score**.  
+**Step 4:** Check the "Champions" tab for the top scorers.  
+**Step 5:** Click "Feedback" to rate the app or suggest new features!
+
+---
+
+## Credits
+
+Special thanks to my faculty, mentors, and friends for their support and feedback.  
+Open-source libraries and the data science community inspired this project.  
+If you found this project useful, give it a ⭐ on GitHub!
+
+---
+
+## Contact
+
+If you have questions, ideas, or want to connect, reach out to me at  
+**mohammedabdulkadars@gmail.com** or [LinkedIn](https://www.linkedin.com/in/mohammedabdulkadars/).
+
+---
+
+**Thanks for visiting! All the best for your learning journey.**
+
+---
