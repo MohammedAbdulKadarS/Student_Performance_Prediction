@@ -83,7 +83,7 @@ elif section == "Explore Data":
     st.markdown("<h1 style='color:#ffaf3d;'>🧪 Data Explorer</h1>", unsafe_allow_html=True)
     st.info("Quickly visualize feature relationships and stats. Choose variable to plot!")
     # Load real data if available
-    df = pd.read_excel("https://github.com/MohammedAbdulKadarS/Student_Performance_Prediction/raw/main/Task___students_performance_dataset.xlsx")
+    df = pd.read_excel("https://raw.githubusercontent.com/MohammedAbdulKadarS/Student_Performance_Prediction/main/Task___students_performance_dataset.xlsx")
     plot = st.selectbox("Show Analysis for:", ["Correlation Heatmap", "Feature Distribution"])
     import seaborn as sns
     import matplotlib.pyplot as plt
